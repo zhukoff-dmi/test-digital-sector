@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дмитрий Жуков</title>
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <img src="./images/header-logo.jpg" alt="Логотип" class="header__logo">
+        </div>
+    </header>
+    <main class="content">
+        <section class="title">
+            <h1 class="title__one">Заголовок первого уровня</h1>
+            <h2 class="title__two">Заголовок второго уровня</h2>
+            <h3 class="title__three">Заголовок третьего уровня</h3>
+            <h4 class="title__four">Заголовок четвертого уровня</h4>
+            <h5 class="title__five">Заголовок пятого уровня</h5>
+            <h6 class="title__six">Заголовок шестого уровня</h6>
+        </section>
+        <section class="paragraphs">
+            <h2 class="visually-hidden">Обязательный заголовок секции</h2>
+            <p class="paragraph"><span>Абзац с различными выделениями текста</span> <b>Жирный</b> <i>Курсив</i>
+                <u>Подчеркнутый</u> <s>Перечеркнутый</s>
+            </p>
+        </section>
+        <section class="lists">
+            <h2 class="visually-hidden">Обязательный заголовок секции</h2>
+            <div class="lists__container">
+                <ul class="list">
+                    <li>Первый пункт списка</li>
+                    <li>Второй пункт списка</li>
+                    <li>Третий пункт списка</li>
+                    <li>Четвертый пункт списка</li>
+                </ul>
+                <ol class="list">
+                    <li>Первый пункт списка</li>
+                    <li>Второй пункт списка</li>
+                    <li>Третий пункт списка</li>
+                    <li>Четвертый пункт списка</li>
+                </ol>
+            </div>
+        </section>
+        <section class="images">
+            <h2 class="visually-hidden">Обязательный заголовок секции</h2>
+            <div class="images__container">
+                <img class="image" src="./images/section-image.png" alt="">
+                <p class="image__title">Фронтенд (от англ. front-end) – это клиентская часть продукта, с которой
+                    взаимодействует пользователь. Она отвечает за отображение информации, обработку действий
+                    пользователя и взаимодействие с бэкендом.</p>
+            </div>
+        </section>
+        <section class="links">
+            <h2 class="visually-hidden">Обязательный заголовок секции</h2>
+            <div class="links__container">
+                <a href="#" class="link link-nice" target="_blank">Оформление ссылок</a>
+                <ul class="links__image">
+                    <li><a href="#" class="link__image" target="_blank"><img src="./images/links-icon/facebook.svg"
+                                alt="" class="icon"></a></li>
+                    <li><a href="#" class="link__image" target="_blank"><img src="./images/links-icon/twitter.svg"
+                                alt="" class="icon"></a></li>
+                    <li><a href="#" class="link__image" target="_blank"><img src="./images/links-icon/youtube.svg"
+                                alt="" class="icon"></a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="forms">
+            <div class="forms__container">
+                <div class="form__registration">
+                    <h2 class="form__title">Регистрация пользователя</h2>
+                    <form action="" method="get" class="form">
+                        <p>
+                            <label for="name" class="form__label">Введите имя:</label>
+                            <input class="form__input" type="text" name="name" id="name" placeholder="Имя" minlength="2"
+                                maxlength="20" required>
+                        </p>
+                        <p>
+                            <label for="email" class="form__label">Введите email:</label>
+                            <input class="form__input" type="email" name="email" id="email" placeholder="me@example.com"
+                                required>
+                        </p>
+                        <p>
+                            <label for="tel" class="form__label">Введите номер телефона:</label>
+                            <input class="form__input" type="tel" name="tel" id="tel" placeholder="Номер телефона"
+                                minlength="11" required>
+                        </p>
+                        <p>
+                            <label for="password" class="form__label">Создайте новый пароль:</label>
+                            <input class="form__input" type="password" name="password" id="password"
+                                placeholder="******" minlength="2" maxlength="20" required>
+                        </p>
+                        <p>
+                            <label for="date" class="form__label">Укажите дату рождения:</label>
+                            <input class="form__input" type="date" name="date" id="date">
+                        </p>
+                        <p>
+                            <label for="time" class="form__label">Укажите время регистрации:</label>
+                            <input class="form__input" type="time" name="time" id="time">
+                        </p>
+                        <p>
+                            <label for="url" class="form__label">Укажите ссылку на ваш сайт:</label>
+                            <input class="form__input" type="url" name="url" id="url" placeholder="https://example.ru">
+                        </p>
+                        <button class="form__button" type="submit">Зарегестрироваться</button>
+                        <button class="form__button" type="reset">Отмена</button>
+                    </form>
+                </div>
+                <div>
+                    <form>
+                        <fieldset class="form__style">
+                            <legend class="form__legend">Прозвище Дракса из «Стражей Галактики»?</legend>
+                            <label>
+                                <input type="radio" name="answer" value="Exterminator">
+                                Уничтожитель
+                            </label>
+                            <label>
+                                <input type="radio" name="answer" value="Destroyer">
+                                Разрушитель
+                            </label>
+                            <label>
+                                <input type="radio" name="answer" value="Accuser">
+                                Обвинитель
+                            </label>
+                            <label>
+                                <input type="radio" name="answer" value="Sweet-tooth">
+                                Сладкоежка
+                            </label>
+                        </fieldset>
+
+                        <fieldset class="form__style">
+                            <legend class="form__legend">Прозвище Дракса из «Стражей Галактики»?</legend>
+                            <label>
+                                <input type="checkbox" name="answer" value="Exterminator">
+                                Уничтожитель
+                            </label>
+                            <label>
+                                <input type="checkbox" name="answer" value="Destroyer">
+                                Разрушитель
+                            </label>
+                            <label>
+                                <input type="checkbox" name="answer" value="Accuser">
+                                Обвинитель
+                            </label>
+                            <label>
+                                <input type="checkbox" name="answer" value="Sweet-tooth">
+                                Сладкоежка
+                            </label>
+                        </fieldset>
+
+                        <fieldset class="form__style">
+                            <select name="cartoon">
+                                <option value="">Уничтожитель</option>
+                                <option value="">Разрушитель</option>
+                                <option value="">Обвинитель</option>
+                                <option value="">Сладкоежка</option>
+                            </select>
+                        </fieldset>
+                        <button class="form__button form__button_margin" type="submit">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="section-table">
+            <h2 class="visually-hidden">Обязательный заголовок секции</h2>
+            <table>
+                <caption class="table__title">Поквартальная чистая прибыль компаний</caption>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Q1</th>
+                        <th>Q2</th>
+                        <th>Q3</th>
+                        <th>Q4</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="round-top">Microsoft</td>
+                        <td>20.3 млрд.</td>
+                        <td>30.5 млрд.</td>
+                        <td>23.5 млрд.</td>
+                        <td>40.3 млрд.</td>
+                    </tr>
+                    <tr>
+                        <td>Google</td>
+                        <td>50.2 млрд.</td>
+                        <td>40.63 млрд.</td>
+                        <td>45.23 млрд.</td>
+                        <td>39.3 млрд.</td>
+                    </tr>
+                    <tr>
+                        <td>Apple</td>
+                        <td>25.4 млрд.</td>
+                        <td>30.2 млрд.</td>
+                        <td>33.3 млрд.</td>
+                        <td>36.7 млрд.</td>
+                    </tr>
+                    <tr>
+                        <td class="round-bottom">IBM</td>
+                        <td>20.4 млрд.</td>
+                        <td>15.6 млрд.</td>
+                        <td>22.3 млрд.</td>
+                        <td>29.3 млрд.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="iframe">
+            <h2 class="iframe__title">Куда я хочу съездить с друзьями 🧳</h2>
+            <iframe
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3A2daf09097fa58fa2df301388c59cac96fc4f0777fce13aa7a8dc0886e1f96480&amp;source=constructor"
+                width="800" height="400"></iframe>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <p class="footer__description">Жуков Дмитрий 2024&copy;</p>
+        </div>
+    </footer>
+</body>
+
+</html>
